@@ -1,0 +1,36 @@
+{
+    "name": "scandipwa/graphql",
+    "type": "magento2-theme",
+    "description": "ScandiPWA bootstrap module",
+    "keywords": [
+        "magento2",
+        "scandipwa",
+        "pwa",
+        "graphql"
+    ],
+    "license": [
+        "OSL-3.0"
+    ],
+    "support": {
+        "source": "https://bitbucket.org/scandiweb/scandipwa-graphql",
+        "email": "info@scandiweb.com"
+    },
+    "authors": [
+        {
+            "name": "Ilja Lapkovskis",
+            "email": "ilja@scandiweb.com"
+        }
+    ],
+    "require": {
+        "magento/product-community-edition": "2.3.0"
+    },
+    "autoload": {
+        "files": [
+            "src/registration.php"
+        ],
+        "psr-4": {
+            "Magento\\Framework\\GraphQl\\": "framework-graphql",
+            "ScandiPWA\\GraphQl\\": "src"
+        }
+    }
+}
